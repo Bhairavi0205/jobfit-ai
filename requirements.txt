@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+groq
+PyPDF2
+reportlab
+python-multipart
+python-dotenv
