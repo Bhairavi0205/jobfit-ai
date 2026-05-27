@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.requests import Request
-from fastapi.staticfiles import StaticFiles
+# from fastapi.staticfiles import StaticFiles
 import PyPDF2
 from groq import Groq
 from dotenv import load_dotenv
@@ -16,7 +16,7 @@ from reportlab.lib.units import inch
 
 load_dotenv()
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
