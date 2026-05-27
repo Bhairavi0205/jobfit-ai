@@ -5,3 +5,5 @@ PyPDF2
 reportlab
 python-multipart
 python-dotenv
+jinja2
+aiofiles
